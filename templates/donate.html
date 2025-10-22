@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website_FOR_MHACKS_2025</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-3.1.0.js" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='js/sub.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.73.2/lib/index.iife.min.js"></script>
+</head>
+<body class="donate_body">
+    <div class="donate_nav">
+        <h1 class="donate_header">Our Partners</h1>
+    </div>
+    <div class="place_holder"></div>
+
+    <div class="sponsor_list">
+        <div class="sponsor_card">
+            <header>Sierra Club</header>
+            <hr>
+            <p>The Sierra Club is the oldest and one of the largest grassroots environmental organizations in the United States. It advocates for clean energy, conservation of public lands, and environmental justice, pairing local activism with national campaigns to protect nature and fight climate change.</p>
+            <img src="{{ url_for('static', filename='sierra_club.png')}}">
+            <div class="donate_combo">
+                <input id="sierra_club", type="number", placeholder="Amount to donate in SOLs">
+                <button id="donate_sierra_club">Donate</button>
+            </div>
+        </div>
+
+        <div class="sponsor_card">
+            <header>Appalachian Voices</header>
+            <hr>
+            <p>Appalachian Voices is an advocacy group focused on protecting the land, air, and water of Central and Southern Appalachia. Through grassroots work and policy engagement, it addresses issues like coal impacts, clean energy solutions, and the health of local communities.</p>
+            <img src="{{ url_for('static', filename='appalachian_voices.png')}}">
+            <div class="donate_combo">
+                <input id="appalachian_voices", type="number", placeholder="Amount to donate in SOLs">
+                <button id="donate_appalachian_voices">Donate</button>
+            </div>
+        </div>
+
+        <div class="sponsor_card">
+            <header>Earth Justice</header>
+            <hr>
+            <p>Earthjustice is a nonprofit environmental law organization dedicated to protecting the environment through legal action. It provides legal representation to communities and organizations fighting for clean air, water, and a healthy planet, ensuring that laws protecting the environment are enforced.</p>
+            <img src="{{ url_for('static', filename='earth_justice.png')}}">
+            <div class="donate_combo">
+                <input id="earth_justice", type="number", placeholder="Amount to donate in SOLs">
+                <button id="donate_earth_justice">Donate</button>
+            </div>
+        </div>
+
+        <div class="sponsor_card">
+            <header>Arcadia Center</header>
+            <hr>
+            <p>Acadia Center is a nonprofit focused on advancing clean energy solutions and climate policy, primarily in the Northeast United States. It works through research, advocacy, and collaboration to promote energy efficiency, renewable energy, and climate resilience.</p>
+            <img src="{{ url_for('static', filename='arcadia_center.png')}}">
+            <div class="donate_combo">
+                <input id="arcadia_center", type="number", placeholder="Amount to donate in SOLs">
+                <button id="donate_arcadia_center">Donate</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

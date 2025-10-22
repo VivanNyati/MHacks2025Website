@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page-wrapper">
+    <section class="content-section" style="text-align: center;">
+        <h1>Payment Canceled</h1>
+        <p style="font-size: 1.2rem;">
+            You have canceled the checkout process. Your payment was not processed.
+        </p>
+        <a href="{{ url_for('donate') }}" class="btn-primary" style="display: inline-block; width: auto; margin-top: 1rem;">
+            Try Donating Again
+        </a>
+    </section>
+</div>
+{% endblock %}

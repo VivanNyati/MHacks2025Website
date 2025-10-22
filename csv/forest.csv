@@ -1,0 +1,193 @@
+country_code,deforestation,country_name
+AFG,120,Afghanistan
+ALB,60,Albania
+DZA,100,Algeria
+AND,20,Andorra
+AGO,140,Angola
+ATG,30,Antigua and Barbuda
+ARG,50,Argentina
+ARM,70,Armenia
+AUS,20,Australia
+AUT,40,Austria
+AZE,80,Azerbaijan
+BHS,50,Bahamas
+BHR,120,Bahrain
+BGD,180,Bangladesh
+BRB,40,Barbados
+BLR,90,Belarus
+BEL,50,Belgium
+BLZ,60,Belize
+BEN,100,Benin
+BTN,30,Bhutan
+BOL,80,Bolivia
+BIH,70,Bosnia and Herzegovina
+BWA,120,Botswana
+BRA,100,Brazil
+BRN,60,Brunei
+BGR,80,Bulgaria
+BFA,140,Burkina Faso
+BDI,160,Burundi
+KHM,120,Cambodia
+CMR,140,Cameroon
+CAN,30,Canada
+CAF,180,Central African Republic
+TCD,200,Chad
+CHL,50,Chile
+CHN,150,China
+COL,80,Colombia
+COM,100,Comoros
+COG,140,Congo
+COD,180,Congo (DRC)
+CRI,60,Costa Rica
+CIV,120,Côte d'Ivoire
+HRV,50,Croatia
+CUB,70,Cuba
+CYP,40,Cyprus
+CZE,60,Czech Republic
+DNK,30,Denmark
+DJI,140,Djibouti
+DMA,40,Dominica
+DOM,100,Dominican Republic
+ECU,80,Ecuador
+EGY,160,Egypt
+SLV,80,El Salvador
+GNQ,120,Equatorial Guinea
+ERI,140,Eritrea
+EST,40,Estonia
+ETH,160,Ethiopia
+FJI,60,Fiji
+FIN,20,Finland
+FRA,50,France
+GAB,120,Gabon
+GMB,140,Gambia
+GEO,80,Georgia
+DEU,40,Germany
+GHA,120,Ghana
+GRC,60,Greece
+GRD,50,Grenada
+GTM,100,Guatemala
+GIN,140,Guinea
+GNB,160,Guinea-Bissau
+GUY,80,Guyana
+HTI,140,Haiti
+HND,100,Honduras
+HUN,60,Hungary
+ISL,20,Iceland
+IND,180,India
+IDN,140,Indonesia
+IRN,160,Iran
+IRQ,180,Iraq
+IRL,30,Ireland
+ISR,80,Israel
+ITA,60,Italy
+JAM,80,Jamaica
+JPN,50,Japan
+JOR,120,Jordan
+KAZ,100,Kazakhstan
+KEN,140,Kenya
+KIR,60,Kiribati
+PRK,160,North Korea
+KOR,80,South Korea
+KWT,140,Kuwait
+KGZ,100,Kyrgyzstan
+LAO,120,Laos
+LVA,50,Latvia
+LBN,100,Lebanon
+LSO,100,Lesotho
+LBR,120,Liberia
+LYB,160,Libya
+LTU,50,Lithuania
+LUX,40,Luxembourg
+MKD,80,Macedonia (FYROM)
+MDG,140,Madagascar
+MWI,120,Malawi
+MYS,80,Malaysia
+MDV,60,Maldives
+MLI,160,Mali
+MLT,50,Malta
+MHL,40,Marshall Islands
+MRT,180,Mauritania
+MUS,60,Mauritius
+MEX,100,Mexico
+FSM,50,Micronesia
+MDA,80,Moldova
+MCO,30,Monaco
+MNG,140,Mongolia
+MNE,70,Montenegro
+MAR,100,Morocco
+MOZ,140,Mozambique
+MMR,160,Myanmar
+NAM,100,Namibia
+NRU,40,Nauru
+NPL,160,Nepal
+NLD,40,Netherlands
+NZL,20,New Zealand
+NIC,80,Nicaragua
+NER,180,Niger
+NGA,160,Nigeria
+NOR,20,Norway
+OMN,120,Oman
+PAK,180,Pakistan
+PLW,40,Palau
+PAN,80,Panama
+PNG,100,Papua New Guinea
+PRY,80,Paraguay
+PER,100,Peru
+PHL,120,Philippines
+POL,70,Poland
+PRT,50,Portugal
+QAT,140,Qatar
+ROU,80,Romania
+RUS,100,Russia
+RWA,140,Rwanda
+KNA,40,Saint Kitts and Nevis
+LCA,50,Saint Lucia
+VCT,40,Saint Vincent and the Grenadines
+WSM,60,Samoa
+SMR,40,San Marino
+STP,80,Sao Tome and Principe
+SAU,160,Saudi Arabia
+SEN,140,Senegal
+SRB,90,Serbia
+SYC,50,Seychelles
+SLE,160,Sierra Leone
+SGP,70,Singapore
+SVK,60,Slovakia
+SVN,50,Slovenia
+SLB,80,Solomon Islands
+SOM,200,Somalia
+ZAF,100,South Africa
+SSD,180,South Sudan
+ESP,50,Spain
+LKA,100,Sri Lanka
+SDN,180,Sudan
+SUR,60,Suriname
+SWZ,100,Swaziland
+SWE,20,Sweden
+CHE,30,Switzerland
+SYR,160,Syria
+TJK,120,Tajikistan
+TZA,140,Tanzania
+THA,100,Thailand
+TLS,80,Timor-Leste
+TGO,140,Togo
+TON,50,Tonga
+TTO,80,Trinidad and Tobago
+TUN,100,Tunisia
+TUR,120,Turkey
+TKM,140,Turkmenistan
+TUV,40,Tuvalu
+UGA,160,Uganda
+UKR,90,Ukraine
+ARE,120,United Arab Emirates
+GBR,50,United Kingdom
+USA,60,United States
+URY,50,Uruguay
+UZB,140,Uzbekistan
+VUT,60,Vanuatu
+VAT,30,Vatican City
+VEN,140,Venezuela
+VNM,120,Vietnam
+YEM,160,Yemen
+ZMB,140,Zambia
+ZWE,120,Zimbabwe

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="content-section" style="text-align: center;">
+    <h1>Thank You for Your Donation!</h1>
+    <p style="font-size: 1.2rem;">
+        Your contribution has been processed successfully. A record of your donation is being written to the Solana blockchain for transparency.
+    </p>
+    <a href="{{ url_for('transactions') }}" class="btn-primary" style="display: inline-block; width: auto; margin-top: 1rem;">
+        View On-Chain Transactions
+    </a>
+</section>
+{% endblock %}

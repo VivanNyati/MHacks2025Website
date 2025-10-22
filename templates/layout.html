@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website_FOR_MHACKS_2025</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-3.1.0.js" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <header class="header">
+    <!-- Replace src with your logo image path -->
+    <img src="{{ url_for('static', filename='mhacks2025logo.png') }}" alt="Logo" class="logo">
+    <nav class="nav-links">
+      <a href="{{ url_for('dashboard') }}">Current Data</a>
+      <a href="#email-signup-section">Email List</a>
+      <a href="https://mhacks2025website-syxg.onrender.com/">Finances</a>
+      <a href="{{ url_for('donate') }}">Donate</a>
+    </nav>
+  </header>
+
+
+     <!-- Full viewport Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="parallax-bg"></div>
+  <div class="hero-content">
+    <h1>Climate Transparency Initiative</h1>
+    <p>Shining a light on real-time climate change data. Accessible, transparent, global.</p>
+    <a href="#who-we-are" class="hero-btn">Learn More</a>
+  </div>
+</section>
+
+  <!-- Horizontal Flex Container for the Three Sections -->
+    <div class="horizontal-sections">
+        <!-- Who We Are Section -->
+        <section id="who-we-are" class="info-section">
+        <h2>Who We Are</h2>
+        <p>
+            <strong>Climate Transparency Initiative</strong> is a team of passionate researchers and developers committed to shining light on worldwide climate issues. By automatically gathering up-to-date climate data from all across the web, we aim to keep the public well-informed and inspired to act.
+        </p>
+        </section>
+
+        <!-- Our Goals Section -->
+        <section id="our-goals" class="info-section">
+        <h2>Our Goals</h2>
+        <ul>
+            <li>Aggregate accurate, up-to-date climate data from global sources.</li>
+            <li>Increase transparency and access to environmental information.</li>
+            <li>Mobilize communities toward sustainable, science-driven action.</li>
+            <li>Empower individuals and organizations to make informed decisions.</li>
+        </ul>
+        </section>
+
+        <!-- Team Bios Section -->
+        <section id="team" class="info-section team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <!-- Repeat this for each team member -->
+            <div class="team-member">
+            <img src="{{ url_for('static', filename='nickalkema.jpeg') }}" alt="Team Member 1" class="team-photo">
+            <h3>Nick Alkema</h3>
+            <p>
+                Data Scientist passionate about open data.
+            </p>
+            </div>
+            <div class="team-member">
+            <img src="{{ url_for('static', filename='maliamoreno.jpeg') }}" alt="Team Member 2" class="team-photo">
+            <h3>Malia Moreno</h3>
+            <p>
+                Climate Researcher focusing on transparency.
+            </p>
+            </div>
+            <div class="team-member">
+            <img src="{{ url_for('static', filename='andrewgolich.jpg') }}" alt="Team Member 3" class="team-photo">
+            <h3>Andrew Gohlich</h3>
+            <p>
+                Web Developer & environmental advocate.
+            </p>
+            </div>
+            <div class="team-member">
+            <img src="{{ url_for('static', filename='vivannyati.jpg') }}" alt="Team Member 4" class="team-photo">
+            <h3>Vivan Nyati</h3>
+            <p>
+                Policy Analyst committed to global change.
+            </p>
+            </div>
+        </div>
+        </section>
+    </div>
+  
+  
+  <!--Section 02: Data-->
+  <section id="section2" style="height:1px;"></section>
+    <section class="fullwidth-image-section">
+        <img src="https://climate.copernicus.eu/sites/default/files/styles/hero_image_extra_large_2x/public/2019-04/iStock-836377430.jpg?itok=FGUY_rL_" alt="Climate Action" class="fullwidth-image">
+    </section>
+    <section class="data-section">
+        <!-- 1. CO2 / Air Quality -->
+        <div class="data-row">
+            <div class="data-image">
+            <!--<img src="https://placehold.co/330x220?text=CO2+%2F+Air+Quality" alt="CO2 / Air Quality Graph">-->
+            <div id="aqi-graph" classname="graph"></div>
+            <div class="data-caption">
+                <a href="#" target="_blank" rel="noopener">Source: NOAA CO<sub>2</sub> Monitoring</a>
+            </div>
+            </div>
+            <div class="data-text">
+            <h3>Atmospheric CO<sub>2</sub> & Air Quality Trends</h3>
+            <p>
+                Recent data shows a steady rise in atmospheric CO<sub>2</sub> levels and fluctuating air quality, reflecting ongoing emissions and urbanization trends.
+            </p>
+            </div>
+        </div>
+
+        <!-- 2. Global Heatmap -->
+        <div class="data-row-alt">
+            <div class="data-image">
+                <!--<img src="https://placehold.co/330x220?text=Global+Temp+Heatmap" alt="Global Temperature Heatmap">-->
+                <div id="temperature-graph" classname="graph"></div>
+                <div class="data-caption">
+                    <a href="#" target="_blank" rel="noopener">Source: NASA GISTEMP</a>
+                </div>
+            </div>
+            <div class="data-text">
+                <h3>Global Surface Temperature Anomalies</h3>
+                <p>
+                    The global heatmap highlights significant increases in surface temperatures, depicting regions most affected by recent warming.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. Ocean Levels / Time -->
+        <div class="data-row">
+            <div class="data-image">
+                <!--<img src="https://placehold.co/330x220?text=Ocean+Levels+Over+Time" alt="Ocean Levels Graph">-->
+                <div id="ocean-levels-graph" classname="graph"></div>
+                <div class="data-caption">
+                    <a href="#" target="_blank" rel="noopener">Source: NOAA Tide Gauge</a>
+                </div>
+            </div>
+            <div class="data-text">
+                <h3>Ocean Level Changes Over Time</h3>
+                <p>
+                    Rising ocean levels threaten coastal communities and ecosystems. Our data visualizes the steady increase observed over the past century.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. Global Forest Coverage -->
+        <div class="data-row-alt">
+            <div class="data-image">
+                <!--<img src="https://placehold.co/330x220?text=Forest+Coverage" alt="Forest Coverage Graph">-->
+                <div id="forest-graph" classname="graph"></div>
+                <div class="data-caption">
+                    <a href="#" target="_blank" rel="noopener">Source: Global Forest Watch</a>
+                </div>
+            </div>
+            <div class="data-text">
+                <h3>Global Forest Coverage</h3>
+                <p>
+                    Forest coverage continues to decrease in several key regions. These trends are closely monitored due to their critical role in carbon sequestration.
+                </p>
+            </div>
+        </div>
+
+        <!-- 6. Severe Weather Events -->
+        <div class="data-row-alt">
+            <div class="data-text">
+                <h3>Severe Weather Events vs. Historical Average</h3>
+                <p>
+                    The frequency and intensity of severe weather events are increasing, surpassing historical averages and driving social and economic disruptions.
+                </p>
+            </div>
+            <div class="data-image">
+                <!--<img src="https://placehold.co/330x220?text=Severe+Weather+Events" alt="Severe Weather Events Graph">-->
+                <div id="severe-weather-graph" classname="graph"></div>
+                <div class="data-caption">
+                    <a href="#" target="_blank" rel="noopener">Source: EM-DAT International Disaster Database</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="email-signup-section">
+    <div class="footer-signup">
+        <h2>Sign up for our email list</h2>
+        <form id="email-signup-form" autocomplete="off">
+        <div class="footer-fields">
+            <input type="text" id="signup-name" name="name" placeholder="Name" required>
+            <input type="email" id="signup-email" name="email" placeholder="Email" required>
+        </div>
+        <div class="footer-checkbox">
+            <input type="checkbox" id="signup-agree" name="agree" required>
+            <label for="signup-agree">I agree to receive emails</label>
+        </div>
+        <button type="submit" id="signup-btn">Sign Up</button>
+        </form>
+    </div>
+    <div class="footer-contact">
+        <p>Contact: info@climatetransparency.com</p>
+        <p>&copy; 2025 ENVI_FOR_MHACKS_2025. All rights reserved.</p>
+    </div>
+    </footer>
+
+</body>
+</html>
+

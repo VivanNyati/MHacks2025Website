@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page-wrapper">
+    <!-- Note: In main.js, this class is used to trigger the API calls -->
+    <section class="dashboard-section">
+        <h1>Impact Dashboard</h1>
+        <p>Real-time data on donations, climate change, and project updates. This is the new data page you can build out.</p>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card" id="financial-report">
+                <h2>Financial Report</h2>
+                <div id="total-donations">
+                    <p class="loading-text">Loading...</p>
+                </div>
+                <div class="chart-container" style="margin-top: 1rem; position: relative; height: 250px;">
+                    <canvas id="donationsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="dashboard-card" id="climate-data">
+                <h2>Global Climate Data</h2>
+                <div id="climate-metrics">
+                    <p class="loading-text">Loading...</p>
+                </div>
+            </div>
+
+            <div class="dashboard-card" id="agentmail-updates">
+                <h2>News & Updates Feed</h2>
+                <div id="agentmail-feed">
+                    <p class="loading-text">Loading updates...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

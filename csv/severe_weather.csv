@@ -1,0 +1,32 @@
+year,location,# of Severe Weather Events
+2015,North America,120
+2016,North America,130
+2017,North America,125
+2018,North America,150
+2019,North America,170
+2015,South America,60
+2016,South America,70
+2017,South America,75
+2018,South America,90
+2015,Africa,80
+2016,Africa,95
+2017,Africa,100
+2018,Africa,110
+2019,Africa,120
+2015,Asia,200
+2016,Asia,210
+2017,Asia,220
+2018,Asia,250
+2019,Asia,260
+2015,Europe,150
+2016,Europe,155
+2017,Europe,160
+2018,Europe,165
+2019,Europe,170
+2015,Australia,40
+2016,Australia,42
+2017,Australia,43
+2018,Australia,50
+2021,Antarctica,5
+2022,Antarctica,6
+2023,Antarctica,7
